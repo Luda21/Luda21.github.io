@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ua"
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Queen</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<!-- Navbar -->
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark py-0">
+				  <!-- Brand/logo -->
+				  <a class="navbar-brand" href="#">
+				    <img src="https://logodiver.ru/wp-content/uploads/2018/12/queen-logo.jpg" alt="logo" style="width:160px">
+				  </a>
+				   <!-- Toggler/collapsibe Button -->
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <!-- Links -->
+				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+					  <ul class="navbar-nav ml-auto">
+					    <li class="nav-item py-2">
+					      <a class="nav-link" href="#">Головна</a>
+					    </li>
+					    <li class="nav-item py-2">
+					      <a class="nav-link" href="#">Відгуки</a>
+					    </li>
+					     <li class="nav-item py-2">
+					      <a class="nav-link" href="#">Контакти</a>
+					    </li>
+					  </ul>
+				</div>
+				</nav>
+			</div>
+		</div>
+		
+		<!-- Slider -->
+		<div class="container slider px-0">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators">
+					    <li data-target="#demo" data-slide-to="0" class="active"></li>
+					    <li data-target="#demo" data-slide-to="1" class=""></li>
+					    <li data-target="#demo" data-slide-to="2" class=""></li>
+					  </ul>
+
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="https://s00.yaplakal.com/pics/pics_original/3/6/9/6569963.jpg" alt="Queen">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="https://stolica-s.su/wp-content/uploads/2016/10/1476100402-stolica-s-su-Queen.jpg" alt="Queen">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="http://pro.radiomayak.ru/wp-content/uploads/2017/07/queen-photo-by-chris-hopper-in-1978.jpg
+					      " alt="Queen">
+					    </div>
+					  </div>
+					 
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					    <span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+					    <span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>		
+				</div>
+			</div>
+			<div class="row py-lg-5 mt-lg-5 py-md-3 mt-md-0 un_slider">
+				<div class="col-lg-1 d-none d-lg-block mt-lg-4"></div>
+				<div class="col-lg-6 col-md-12">
+					<div class="title_header mt-5">
+						<div class="logo_big px-lg-0 px-md-4 px-sm-5"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Queen-star-hollywood.jpg/220px-Queen-star-hollywood.png" alt="logotype"></div>
+						<p class="title_head px-lg-0 px-md-4 px-sm-5">Дізнайтесь більше про Queen</p>
+					</div>
+					<p class="text px-lg-0 px-md-4 px-sm-5">Дана програма допоможе розробити <br> ефект пізнання про рок музику та легендарний гурт Queen</p>
+					<button type="button" class="btn btn-outline-light download_button d-none d-lg-block">Завантажити</button>
+				</div>
+				<div class="col-lg-4 d-none d-lg-block">
+					<form class="form_registry my-5" action="#">
+						<p class="form_title">Спробуйте <span>безкоштовно</span></p>
+						<p><input class="u_info" id="user_name" type="text" name="" placeholder="Ім'я"></p>
+						<p><input class="u_info" id="user_mail" type="email" name="" placeholder="Електронна пошта"> </p>
+						<p><input class="u_info" id="user_password" type="password" name="" placeholder="Пароль"></p>
+						<button onclick="SendMessage()" class="button_form">Розпочнімо</button>
+					</form>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block"></div>
+			</div>
+		</div>
+		<!-- Social -->
+		<div class="container social py-4 ">
+			<div class="row d-flex align-items-center justify-content-around">
+	        	<div class="col-lg-4 col-md-5 col-sm-12">        		
+			       	<div class="left_box px-3">
+						<p class="soc_title">Cоціальні мережі</p>
+						<p class="soc_text">Ми в соціальних мережах,  підпишіться і отримайте знижку!</p>
+					</div>	
+				</div>	
+				<div class="col-lg-1 d-none d-lg-block"></div>
+			    <div class="col-lg-1 col-md-1 col-1 px-0">
+			    	<a href="https://www.facebook.com/" target="blank"><div class="fb">&nbsp;</div></a>
+			    </div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://twitter.com/" target="blank"><div class="tw">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://plus.google.com/" target="blank"><div class="gplus">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.pinterest.com/" target="blank"><div class="pin">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.instagram.com/" target="blank"><div class="insta">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.stumbleupon.com/" target="blank"><div class="stumble">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="http://www.feedicons.com/" target="blank"><div class="feed">&nbsp;</div></a>
+				</div>
+	        
+	        </div>
+	    </div> 
+        <!-- Tabs -->
+  		<div class="tabs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-12">
+						<ul class="nav nav-pills nav-stacked flex-xl-column flex-lg-column flex-row justify-content-md-start justify-content-sm-start">
+							<li class="active"><a href="#tab_a" data-toggle="pill">Фредді Мерк'юрі</a></li>
+							<li><a href="#tab_b" data-toggle="pill">Браян Мей</a></li>
+							<li><a href="#tab_c" data-toggle="pill">Роджер Тейлор</a></li>
+							<li><a href="#tab_c" data-toggle="pill">Джон Дікон</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-10 col-lg-10 col-md-12">
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab_a">
+								<div class="row">
+									<div class="col-lg-7">
+										<h3>Феномен гурту Queen</h3>
+										<p>Уперше «Queen» потрапили в чарт Великої Британії з їхнім другим альбомом «Queen II» 1974 року, але міжнародний успіх їм принесли «Sheer Heart Attack» пізніше того самого року і «A Night at the Opera» 1975 року. Останній містив пісню «Bohemian Rhapsody», яка залишалася на першій сходинці чарту UK упродовж дев'яти тижнів і популяризувала жанр музичного відеокліпу.</p>
+						                  <p>Альбом 1977 року «News of the World» містив пісні «We Will Rock You» і «We Are the Champions», які стали гімнами на спортивних змаганнях.</p>
+									</div>
+									<div class="col-xl-5 col-lg-5">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Queen_%E2%80%93_montagem_%E2%80%93_new.png/200px-Queen_%E2%80%93_montagem_%E2%80%93_new.png" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="tab_b">
+								<div class="row">
+									<div class="col-lg-7">
+										<h3></h3>
+										<p>Альбом 1977 року «News of the World» містив пісні «We Will Rock You» і «We Are the Champions», які стали гімнами на спортивних змаганнях. До початку 1980-х років «Queen» вже були одним із найвизначніших стадіонних рок-гуртів у світі. «Another One Bites the Dust», що вийшов 1980 року, є їхнім найкраще продаваним синглом, тоді як їхній альбом-компіляція 1981 року «Greatest Hits належить до числа найкраще продаваних альбомів у Великій Британії[en] і вісім разів ставав платиновим у США. Їхній виступ на концерті 1985 року «Live Aid» різні музичні видання називають одним із найвизначніших в історії рок-музики, а за опитуванням музичної індустрії 2005 року — він найкращий. 1991 року Мерк'юрі помер від пневмонії, ускладнення СНІДу, а Дікон завершив виступи 1997 року. Відтоді Мей і Тейлор під час кількох турів виступали під назвою «Queen» разом з Полом Роджерсом і Адамом Ламбертом як вокалістами.</p>
+										<p>Гурт випустив 18 альбомів, 18 синглів і 10 DVD, які посідали першу сходинку в чарті. За різними оцінками кількість їхніх проданих записів становить від 150 до 300 мільйонів копій, що робить їх одним із найкраще продаваних музичних артистів[en] у світі. 1991 року «Queen» отримали від Британської асоціації виробників фонограм нагороду «За видатний внесок у британську музику». 2001 року їх введено в Залу слави рок-н-ролу. Кожен член «Queen» написав по кілька синглів, і всі чотири члени гурту були введені в Зал слави піснярів у 2003 році. У 2005 році гурт отримав премію Ivor Novello за видатну колекцію пісень від Британської Академії піснярів, композиторів і авторів, а у 2018 році їм була вручена премія «Греммі» за досягнення протягом життя.</p>
+									</div>
+									<div class="col-xl-5 col-lg-5">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/QueenPerforming1977.jpg/220px-QueenPerforming1977.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="tab_c">
+								<div class="row">
+									<div class="col-lg-7">
+										<h3>Цікаві факти про баранчиків.</h3>
+										<p>Вівці були одомашнені людьми більше 8000 років тому. Популяція овець Австралії перевищує кількість населення країни в 4 рази. Найбільше поголів’я овець в світі знаходиться в Китаї. Найперший клонований ссавець – це овечка Доллі. Всього в світі налічується близько шестисот різних порід овець.</p>
+										<p>Вівці здатні дивитися назад, не повертаючи голови. Як не дивно, але експерименти підтвердили, що вівці володіють відмінною пам’яттю. Вівці мають прямокутні зіниці. Також вівці розрізняють кольори.</p>
+									</div>
+									<div class="col-xl-5 col-lg-5">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Queen_12041982_01_800b.jpg/230px-Queen_12041982_01_800b.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<section class="section1 container">
+			<div class="row">
+				<div class="col-lg-5">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977.jpg/250px-Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977.jpg" class="img-fluid">
+				</div>
+				<div class="col-lg-7">
+					<h3 class="title_sect"></h3>
+					<div class="divider">Фредді Мерк'юрі</div>
+					<p>Фре́дді Ме́рк'юрі (англ. Freddie Mercury, справжнє ім'я: Фаррух Бульсара, Farrokh Bulsara, нар. 5 вересня 1946, Занзібар, Занзібарський султанат — пом. 24 листопада 1991, Лондон) — британський співак, автор пісень і музичний продюсер, відомий передусім як лідер, вокаліст та клавішник рок-гурту Queen. Прославився своїм яскравим сценічним образом і чотирьох-октавним вокальним діапазоном.[1][2][3] Написав і виконав багато хітів Queen, зокрема «Bohemian Rhapsody», «Killer Queen», «Somebody to Love», «Don't Stop Me Now», «Crazy Little Thing Called Love», і «We Are the Champions». Виступаючи в складі Queen мав водночас і сольну кар'єру, а іноді був продюсером і запрошеним музикантом для інших колективів.Народився в сім'ї парсів у Занзібарському султанаті, виріс там і в Індії, а в підлітковому віці переїхав з родиною до Міддлсекса (Англія). 1970 року разом з гітаристом Браяном Меєм і барабанщиком Роджером Тейлором створив гурт Queen. Помер 1991 року у віці 45 внаслідок ускладнень СНІДу, лише за день до смерті оголосивши, що в нього ця хвороба.
+
+1992 року Мерк'юрі посмертно отримав Brit Awards за видатний внесок у британську музику, а на стадіоні Вемблі в Лондоні відбувся грандіозний концерт на його честь[en]. 2001 року разом з іншими музикантами Queen його ввели в Залу слави рок-н-ролу. Крім того, 2003 року увійшов у Залу слави піснярів, а 2004-го — в Британську музичну залу слави[en]. У 2002 році посів 58-ме місце в опитуванні 100 найвизначніших британців, проведеному BBC. За нього постійно голосують як за одного з найвидатніших співаків в історії популярної музики.[4][5][6]
+
+У 2008 році Мерк'юрі посів 18 місце в списку «100 найвидатніших співаків усіх часів» за версією американського журналу Rolling Stone.[3]</p>
+					<div class="row">
+						<div class="col-lg-12">
+							 <div class="media border p-3">
+							    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Brian_May.JPG/250px-Brian_May.JPG" alt="rabbit" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+							    <div class="media-body">
+							      <h4>Браян Мей</h4>
+							      <p>Брайан Гарольд Мей (англ. Brian Harold May; нар. 19 липня 1947 року) — англійський музикант, співак, автор пісень, астрофізик і фотограф. Командор Ордену Британської імперії. Найбільш відомий як гітарист рок-гурту «Queen», у 2001 році він був введений до Зали рок-н-ролу як один з членів гурту. Крім того, у 2018 році, він як член «Queen» отримав премію «Греммі» за досягнення протягом життя, яка відзначає «найбільш видатні записи в історії музики».[1] Мей використовує саморобну електрогітару Red Special.[2] Його композиції для гурту включають «We Will Rock You», «Tie Your Mother Down», «I Want It All», «Fat Bottomed Girls», «Flash», «Hammer to Fall», «Save Me», «Who Wants to Live Forever» і «The Show Must Go On».
+
+Мей був співзасновником гурту «Queen», разом з вокалістом Фредді Мерк'юрі та барабанщиком Роджером Тейлором. Раніше Мей виступав з Тейлором в гурті «Smile», до якого він приєднався, коли вчився в університеті. Протягом п'яти років після формування «Queen» у 1970 році і найму басиста Джона Дікона (чим остаточно завершилося формування складу гурту), «Queen» стали одним з найвеличніших рок-гуртів у світі після успіху альбому «A Night at the Opera» і його синглу «Bohemian Rhapsody». З середини 1970-х років до початку 1990-х гурт «Queen» практично постійно перебував у чартах Великої Британії і грав на деяких найбільших у світі музичних подіях, особливо відзначившись на «Live Aid» у 1985 році. Як учасника «Queen», Мея стали вважати віртуозним музикантом з характерною манерою виконання, з притаманними йому багатошаровими гітарними партіями.
+
+Після смерті Мерк'юрі у 1991 році, у «Queen» відбулася перерва, яка тривала протягом декількох років, але в кінцевому підсумку гурт був знову скликаний Меєм і Тейлором для подальших виступів з участю інших вокалістів. У 2005 році в ході опитування «Planet Rock» Мею була дана сьома позиція серед видатних гітаристів всіх часів.[3] Він зайняв 26-е місце в списку 100 найкращих гітаристів усіх часів за версією журналу «Rolling Stone».[4] У 2012 році Мей зайняв 2-е місце як видатний гітарист всіх часів за опитуванням читачів журналу «Guitar World».[5]
+
+Мея було призначено командором Ордена Британської імперії (CBE) за «заслуги перед музичною індустрією і благодійну діяльність» у 2005 році.[6] Мей був відзначений доктором філософії з астрофізики в Імперському коледжі Лондона у 2007 році і був канцлером Ліверпульського університету Джона Мура з 2008-го по 2013 рік.[7][8][9] Він був «науковим співробітником команди» під час місії НАСА «New Horizons» на Плутон.[10][11] Він також є співзасновником кампанії з підвищення обізнаності щодо небезпеки астероїдів, Asteroid Day (День астероїда).[12] На його честь названий астероїд під найменуванням 52665 Brianmay. Мей також є активістом по захисту прав тварин, який бореться проти полювання на лисиць та відлову борсуків у Великій Британії.[13]
+
+</p>   
+							    </div>
+							  </div>
+							  <div class="media border p-3">
+							    <img src="http://images6.fanpop.com/image/photos/32500000/Roger-Taylor-roger-taylor-32525145-443-603.jpg" alt="rabbit" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+							    <div class="media-body">
+							      <h4>Роджер Тейлор</h4>
+							      <ol>
+							      	<li>Роджер Меддоуз-Тейлор (нар. 26 липня 1949) — англійський музикант, співак і пісняр. Мультиінструменталіст, найбільш відомий як барабанщик рок-гурту «Queen».[1] Як барабанщик, Тейлор отримав визнання на початку своєї кар'єри за його унікальне звучання.[2] В опитуванні радіослухачів, проведеному радіостанцією «Planet Rock» у 2005 році, Тейлор посів восьме місце як найкращий барабанщик в історії класичної рок-музики.[3]
+
+Як пісняр Тейлор з самого початку записував пісні для альбомів «Queen», він написав принаймні один трек на кожному альбомі і часто виконуючи вокал у своїх власних композиціях. Тейлор написав або був співавтором трьох пісень, які посіли першу позицію у британському чарті («These Are the Days of Our Lives», «Innuendo» і «Under Pressure») і зробив внесок у написання п'яти великих хітів («Radio Ga Ga», «A Kind of Magic», «Heaven for Everyone», «Breakthru», і «The Invisible Man»).[4][5] Він також, як відомо, був головним автором міжнародного «топ-10» хіта «One Vision», хоча трек приписують всьому гурту. Він співпрацював із такими артистами, як Ерік Клептон, Роджер Вотерс, Роджер Долтрі, Роберт Плант, Філ Коллінз, гурт «Genesis», Джиммі Нейл, Елтон Джон, Гері Ньюмен, Шакін Стівенс, гурт «Foo Fighters», Ел Стюарт, Стів Вай, Йошикі, Сінді Олмоузні і гурт «Bon Jovi». Як продюсер він продюсував альбоми Вірджинії Вулф, Джиммі Нейла і гурту «Magnum».
+
+На додаток до своєї ударної праці Тейлор іноді грав на клавішних, гітарах і басі в своїх власних піснях. У 1980-х роках, на додаток до своєї праці у «Queen», він сформував паралельний гурт, відомий як «The Cross», в якому він був вокалістом і ритм-гітаристом. На початку 1980-х Тейлор також був учасником популярної британської вікторини «Pop Quiz», організованої Майком Рідом.
+
+Згідно списку багатіїв «Sunday Times Rich List», статки Тейлора було оцінено у 80 мільйонів фунтів стерлінгів або близько 127 мільйонів доларів станом на 2011 рік.[6] У 2014 році він з'явився у британському комедійному документальному серіалі «Життя року з Браяном Перном». Тейлор також добре відомий за його вокальний фальцет-діапазон</l>
+                                  </p>   
+							    </div>
+							  </div>
+							  <div class="media border p-3">
+							    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bass_player_queen.jpg/250px-Bass_player_queen.jpg" alt="rabbit" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+							    <div class="media-body">
+							      <h4>Джон Дікон</h4>
+							      <ol>
+							       <li>Джон Річард Дікон (нар. 19 серпня 1951) — колишній англійський музикант, найбільш відомий як бас-гітарист рок-гурту «Queen». Він написав декілька пісень для гурту, у тому числі «Топ-10» хітів «You're My Best Friend», «Another One Bites the Dust», «Back Chat», і «I Want to Break Free», і займався фінансовим менеджментом гурту.
+
+Дікон виріс в Одбі, Лестершир, грав на бас-гітарі в місцевому гурті «The Opposition», а потім перейшов вивчати електроніку у Коледж Челсі, Лондон. Він приєднався до «Queen» у 1971 році завдяки своїм музичним і навичкам з електроніки, завдяки яким створив саморобний підсилювач «Deacy Amp», який гітарист Браян Мей використовував для створення гітарних оркестрів протягом всієї кар'єри «Queen». Починаючи з третього альбому «Sheer Heart Attack», він писав принаймні по одній пісні на альбом, кілька з яких стали хітами. Крім баса, в студійній роботі «Queen», Дікон грав на гітарі та клавішних.
+
+Після смерті вокаліста Фредді Мерк'юрі у 1991 році і Пам'ятного концерту в наступному році, Дікон виступав з рештою членів «Queen» всього кілька разів, а у 1997 році пішов з музичної індустрії після запису «No-One but You (Only the Good Die Young)». Він не брав участі ні в одному з інших проектів, створених двома учасниками, що залишилися в живих, Браяном Меєм і Роджером Тейлором.</li>
+							      </ol>
+							     				      
+							    </div>
+							  </div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="section2 container">
+			<div class="row">
+				<div class="col-lg-7">
+					<h3 class="title_sect">Найцікавіше про величний Queen</h3>
+					<div class="divider"></div>
+					<p>Гурт Queen має у своєму доробку 16 офіційних релізів, а також 6 концертних альбомів, безліч збірників та відеозаписів виступів. Музичні роботи навіть сьогодні займають топи музичних чартів світу. А їх виступи вважаються найяскравішими рок-шоу.</p>
+					<p>І почнемо із фронтмена бенду Фредді Меркьюрі. У нього був жахливий прикус з раннього дитинства. Чотири зайвих зуба, і через це різці стирчали назовні. Будучи молодим хлопцем, музикант хотів виправити цей серйозний дефект, але так і не знайшов часу. За іншими даними, він просто боявся стоматологів. Ще Меркьюрі боявся, що операція вплине на його вокальні дані. З цієї ж причини він не став позбавлятися від поліпів на голосових зв'язках. І У Меркьюрі був шикарний голос, незважаючи на те, що він був завзятим курцем.
+До речі, Фредді обожнював тварин, а особливо кішок. У його будинку завжди жили пухнасті вихованці. Коли хтось із них помирав, Меркьюрі плакав, як дитина, адже він вважав кішок членами своєї сім'ї. Один зі своїх альбомів він присвятив цим тваринам. Музиканти часто посміювалися над Фредді, коли той, будучи на гастролях, дзвонив своїм кішкам і розмовляв з ними по телефону. У Меркьюрі навіть був жилет з портретами всіх його вихованців.
+
+Гітарист Queen Брайан Мей завжди використовував замість медіатора монету в 6 пенні. За словами музиканта, медіатор занадто гнучкий, а ще однією перевагою даної монети є її зазубрення на краю, це допомагає витягувати особливий скреготливий звук з струн.
+Барабанщик квінів Роджер Тейлор славився своїми неординарними витівками. З чуток, живучи в гуртожитку, він одного разу навіть зварив людський череп.
+Джона Дікона позбавляли водійських прав за водіння у п'яному вигляді. Хоча він - єдиний з групи музикант, який одружився в юному віці. У шлюбі у нього народилося шестеро дітей.
+Брайан Мей і Роджер Тейлор постійно сварилися між собою. Одного разу в гримерці перед шоу один бризнув в очі іншому лаком для волосся.
+ У легендарного гурту залишилося дуже багато цікавого матеріалу, який, судячи з усього, ніколи не буде виданий. На це є безліч причин.
+
+У 2007 році слухачі ВВС назвали «Queen» найкращим британським гуртом всіх часів.</p>
+				</div>
+				<div class="col-lg-5">
+					<img src="http://www.armyfm.com.ua/1238bimg/najc%D1%96kav%D1%96she-pro-velichnij-queen.jpg" class="img-fluid">
+				</div>
+			</div>
+		</section>
+
+		<section class="section3 container py-5">
+			<div class="row pt-5 pb-4">
+				<div class="col-7 mx-auto">
+					<h2 class="text-center">Ніщо не відбувається з нічого</h2>
+				</div>
+			</div>
+			<form class="form1">
+			  <div class="form-group row py-3">
+			  	<div class="col-lg-1"></div>
+			    <div class="col-lg-4 my-1">
+			      <input type="text" class="form-control" placeholder="Ім'я">
+			    </div>
+			    <div class="col-lg-3 my-1">
+			      <input type="tel" class="form-control" placeholder="+38 (0__) __-__-___">
+			    </div>
+			   <div class="col-lg-1"></div>
+			  </div>
+			  <div class="form-group row py-4">
+			  	<div class="col-lg-8 mx-auto">
+				    <button type="submit" class="btn btn-outline-light btn-lg btn-block order_button">Замовити</button>
+				</div>
+			  </div>
+			</form>
+		</section>
+
+		<section class="section4 container pt-5">
+			<div class="row pt-5 pb-4">
+				<div class="col-12">
+					<h2 class="text-center">Якщо Вам скучно, напишіть до нас...<br>Будемо раді бачити новий спам!</h2>
+					<p class="text-center">Давайте спершу перекусимо, а дружелюбність проявите потім.</p>
+				</div>
+			</div>
+			<form class="form2">
+			  <div class="form-group row py-3 ">
+			  	<div class="col-lg-6">
+			      <input type="text" class="form-control" placeholder="Як звати">
+			      <input type="email" class="form-control" placeholder="Куди електронні листи писати">
+			      <input type="text" class="form-control" placeholder="Що в темі говорити">
+			    </div>
+			    <div class="col-lg-6">
+			      <textarea class="form-control" rows="8" id="comment" placeholder="І що ви про це все думаєте?"></textarea>
+			    </div>
+			  </div>
+			  <div class="form-group row pb-5 pt-3 mb-0">
+			  	<div class="col-lg-2 mx-auto">
+				    <button type="submit" class="btn btn-warning btn-block send_button">Відправити</button>
+				</div>
+			  </div>
+			</form>
+		</section>
+
+		<div class="container footer">
+			<div class="row py-4 d-flex align-items-center justify-content-around">
+				<div class="col-lg-1 d-none d-lg-block"></div>
+				<div class="col-lg-2 col-md-2 d-flex align-items-center">
+					<p class="copyright m-0">© 2019</p>
+				</div>
+				<div class="col-lg-2 col-md-3"></div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.facebook.com/" target="blank"><div class="fb">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://twitter.com/" target="blank"><div class="tw">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://plus.google.com/" target="blank"><div class="gplus">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.pinterest.com/" target="blank"><div class="pin">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.instagram.com/" target="blank"><div class="insta">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="https://www.stumbleupon.com/" target="blank"><div class="stumble">&nbsp;</div></a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-1 px-0">
+					<a href="http://www.feedicons.com/" target="blank"><div class="feed">&nbsp;</div></a>
+				</div>
+	
+			</div>
+		</div>
+             
+	
+
+	</div>
+	
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		function SendMessage() {
+			let userName = document.getElementById('user_name').value;
+			let userMail = document.getElementById('user_mail').value;
+			let userPass = document.getElementById('user_password').value;
+			alert(userName);
+			alert(userMail);
+			alert(userPass);
+
+		}
+		
+		let activTab = document.querySelectorAll(".tabs li");
+		for (let i = 0; i < activTab.length; i++){
+			activTab[i].addEventListener('click', changeTab)
+		};
+		function changeTab() {
+			let noActiveTab = document.querySelectorAll(".tabs li");
+			for (let i = 0; i < noActiveTab.length; i++){
+				noActiveTab[i].classList.remove("active");
+			};
+			console.dir(this);
+			this.classList.add("active");
+		}
+
+	</script>
+
+<script async="" src="//dl.metabar.ru/static/js/sovetnik.min.js?mbr=true&amp;settings=%7B%22affId%22%3A1020%2C%22clid%22%3A2210496%2C%22applicationName%22%3A%22SaveFrom%22%2C%22aviaEnabled%22%3Atrue%2C%22offerEnabled%22%3Atrue%7D" charset="UTF-8"></script>
+</body>
+</html>
